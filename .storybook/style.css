@@ -1,0 +1,13 @@
+.mdxDl {
+    margin-bottom: 30px;
+}
+.mdxDl > dt {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.mdxDl > dd {
+    margin: 10px 0 0 10px;
+}
+.mdxDl.inline > dd {
+    display: inline-block;
+}
