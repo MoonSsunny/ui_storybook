@@ -23,3 +23,10 @@ yarn-debug.log*
 yarn-error.log*
 
 node_modules
+/.idea
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/ui_storybook.iml
+/.idea/vcs.xml

@@ -1,0 +1,64 @@
+import {Meta, Story, ArgsTable, Canvas, Title, Subtitle} from "@storybook/addon-docs";
+import Checkbox, {Sizes} from "../components/Checkbox";
+
+<Meta title={'component/checkbox'} component={Checkbox}/>
+
+<Title>Checkbox</Title>
+
+<Subtitle>Checkbox Component</Subtitle>
+
+## 기본
+<Canvas>
+<Story name="basic" args={{}}>
+    {(args) => <Checkbox {...args} />}
+</Story>
+</Canvas>
+
+## Props
+<ArgsTable story="basic" />
+
+## isChecked
+<Canvas>
+    <Story name="isChecked">
+        <dl className={'mdxDl'}>
+            <dt>isChecked</dt>
+            <dd><Checkbox label={'체크 해제 됨 (기본)'}/></dd>
+            <dd><Checkbox isChecked={true} label={'체크 됨'}/></dd>
+        </dl>
+    </Story>
+</Canvas>
+
+## isDisabled
+<Canvas>
+    <Story name="isDisabled">
+        <dl className={'mdxDl'}>
+            <dt>isDisabled</dt>
+            <dd><Checkbox isDisabled={true} label={'비활성'}/></dd>
+            <dd><Checkbox isDisabled={true} isChecked={true} label={'비활성 (체크)'}/></dd>
+        </dl>
+    </Story>
+</Canvas>
+
+## with style
+<Canvas>
+    <Story name="with Style">
+        <dl className={'mdxDl'}>
+            <dt>size</dt>
+            <dd><Checkbox size={Sizes.small} label={'Option A'} /></dd>
+            <dd><Checkbox size={Sizes.medium} label={'Option B'}/></dd>
+            <dd><Checkbox size={Sizes.large} label={'Option C'}/></dd>
+        </dl>
+        <dl className={'mdxDl'}>
+            <dt>color</dt>
+            <dd><Checkbox color={'#53c31c'} label={'Option A'}/></dd>
+            <dd><Checkbox color={'#1a90fe'} label={'Option B'}/></dd>
+            <dd><Checkbox color={'#fbac15'} label={'Option C'}/></dd>
+        </dl>
+        <dl className={'mdxDl'}>
+            <dt>background</dt>
+            <dd><Checkbox background={'#53c31c'} label={'Option A'}/></dd>
+            <dd><Checkbox background={'#1a90fe'} label={'Option B'}/></dd>
+            <dd><Checkbox background={'#fbac15'} label={'Option C'}/></dd>
+        </dl>
+    </Story>
+</Canvas>
